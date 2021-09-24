@@ -10,6 +10,7 @@ import java.sql.Connection;
  */
 public class Inicio {
     public static void main(String[] args) {
+        var hola = 89;
         
         Conexion conexion = new Conexion();
         
