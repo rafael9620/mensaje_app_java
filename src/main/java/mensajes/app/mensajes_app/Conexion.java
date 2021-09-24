@@ -14,20 +14,19 @@ import java.sql.SQLException;
  * @author FranciscoR
  */
 public class Conexion {
-    
-    public Connection get_connection(){
+
+    public Connection get_connection() {
         Connection connection = null;
-        
-        try{
-            connection= DriverManager.getConnection("jdbc:mysql://127.0.0.1:3380/mensajes_app","root","admin");
-            if(connection != null){
+
+        try {
+            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3380/mensajes_app", "root", "admin");
+            if (connection != null) {
                 System.out.println("OK");
             }
-        } 
-        catch(SQLException e){
+        } catch (SQLException e) {
             System.out.println(e);
         }
         return connection;
-}
-    
+    }
+
 }
