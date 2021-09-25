@@ -21,7 +21,7 @@ public class Conexion {
         try {
             connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3380/mensajes_app", "root", "admin");
             if (connection != null) {
-                System.out.println("OK");
+                //System.out.println("OK");
             }
         } catch (SQLException e) {
             System.out.println(e);
